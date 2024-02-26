@@ -3,7 +3,7 @@ package com.example.taskgestion.model;
 import java.io.Serializable;
 
 import jakarta.persistence.*;
-// import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @Entity
@@ -21,7 +21,7 @@ public class Tasks implements Serializable {
 
     private String tag;
 
-    // @NotNull
+    @NotNull
     private String description;
 
     public Tasks(String tag, String description) {
